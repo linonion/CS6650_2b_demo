@@ -1,4 +1,41 @@
-**.tfvars
-**.tfstate
-**.tfstate.*
+
+# Terraform local state and cache
+**/*.tfstate
+**/*.tfstate.*
+**/*.tfvars
+**/*.tfvars.json
 **/.terraform/
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep Terraform provider lock file tracked
+# Do NOT ignore .terraform.lock.hcl
+
+# Python
+.venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.tfplan
+
+# Local binaries and OS files
+server
+product-service
+.DS_Store
+
+# Local IDE settings
+.vscode/
+.idea/
